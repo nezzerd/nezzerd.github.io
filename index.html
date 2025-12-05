@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookIT - платформа бронирования отелей</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container nav-container">
+        <div class="logo">BookIT</div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#functionality">Функционал</a></li>
+                <li><a href="#scenarios">Сценарии</a></li>
+                <li><a href="#api">API</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>BookIT: платформа для бронирования отелей</h1>
+            <p>Система, которая объединяет путешественников и владельцев отелей в единой экосистеме. Работайте на
+                платформе как клиент, ищущий идеальный отель, или как отельер, управляющий своей сетью.</p>
+
+            <div class="hero-features">
+                <div class="feature-card">
+                    <h3><i class="fas fa-user"></i> Для клиентов</h3>
+                    <ul>
+                        <li>Поиск отелей по расширенным фильтрам</li>
+                        <li>Бронирование в несколько кликов</li>
+                        <li>Управление всеми бронированиями</li>
+                        <li>История путешествий</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3><i class="fas fa-building"></i> Для отельеров</h3>
+                    <ul>
+                        <li>Управление несколькими отелями</li>
+                        <li>Добавление и редактирование информации</li>
+                        <li>Статистика бронирований</li>
+                        <li>Аналитика загрузки номеров</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="functionality" class="main-functionality">
+    <div class="container">
+        <div class="section-title">
+            <h2>Основной функционал</h2>
+            <p>BookIT предлагает два режима работы на одной платформе. Выберите свою роль при входе в систему</p>
+        </div>
+
+        <div class="screenshot-container">
+            <h3 style="margin-bottom: 40px; color: var(--dark); text-align: center; font-size: 1.8rem;">Выбор режима
+                работы</h3>
+            <div class="screenshot-placeholder">
+                <img class="screenshot-img" src="choise.png" alt="Выбор режима работы">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="scenarios" class="user-scenarios">
+    <div class="container">
+        <div class="section-title">
+            <p>Два способа использования системы BookIT</p>
+        </div>
+
+        <div class="scenario-section">
+            <div class="scenario-section">
+                <div class="scenario-header">
+                    <h3><i class="fas fa-building"></i> Сценарий первый - отельерский</h3>
+                    <p>После выбора режима "Отельер" в главном меню вы получаете доступ к панели управления своими
+                        отелями</p>
+                </div>
+
+                <div class="scenario-content">
+                    <div class="scenario-description">
+                        <p>Управляйте своей сетью отелей, добавляйте новые объекты, отслеживайте бронирования и
+                            анализируйте статистику в панели управления.</p>
+                    </div>
+
+                    <ol class="scenario-steps" style="counter-reset: step;">
+                        <li>Войдите в систему под своей учетной записью отельера</li>
+                        <li>Выберите "Добавить отель" для создания новой гостиницы</li>
+                        <li>Заполните информацию: название, город, описание, фотографии, удобства</li>
+                        <li>Настройте номера и цены для каждого типа размещения</li>
+                        <li>Просматривайте статистику бронирований и загрузку номеров</li>
+                    </ol>
+
+                    <div class="scenario-screenshots">
+                        <div class="scenario-screenshot-container">
+                            <h4>Добавление нового отеля</h4>
+                            <div class="scenario-screenshot">
+                                <img src="add.png" alt="Добавление отеля">
+                            </div>
+                        </div>
+
+                        <div class="scenario-screenshot-container">
+                            <h4>Статистика бронирований</h4>
+                            <div class="scenario-screenshot">
+                                <img src="stats.png" alt="Статистика бронирований">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-section">
+                <div class="scenario-header">
+                    <h3><i class="fas fa-user"></i> Сценарий второй - клиентский</h3>
+                    <p>Выберите режим "Клиент" для поиска и бронирования отелей по всему миру</p>
+                </div>
+
+                <div class="scenario-content">
+                    <div class="scenario-description">
+                        <p>Находите подходящие отели с помощью расширенных фильтров и бронируйте номера в несколько кликов.</p>
+                    </div>
+
+                    <ol class="scenario-steps" style="counter-reset: step;">
+                        <li>Войдите в систему как клиент</li>
+                        <li>Укажите параметры поиска: город, даты, количество гостей</li>
+                        <li>Примените дополнительные фильтры: цена, удобства</li>
+                        <li>Просмотрите список подходящих отелей с фотографиями</li>
+                        <li>Выберите отель, проверьте наличие и завершите бронирование</li>
+                    </ol>
+
+                    <div class="scenario-screenshots">
+                        <div class="scenario-screenshot-container">
+                            <h4>Фильтры поиска отелей</h4>
+                            <div class="scenario-screenshot">
+                                <img src="filter.png" alt="Фильтры поиска">
+                            </div>
+                        </div>
+
+                        <div class="scenario-screenshot-container">
+                            <h4>Результаты поиска отелей</h4>
+                            <div class="scenario-screenshot">
+                                <img src="serchres.png" alt="Результаты поиска">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="api" class="api-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>REST API</h2>
+        </div>
+
+        <div class="api-categories">
+            <div class="api-category for-all">
+                <h3><i class="fas fa-users"></i> Все пользователи</h3>
+
+                <div class="api-endpoint for-all">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                        <span class="method method-post">POST</span>
+                        <strong>Создание аккаунта</strong>
+                    </div>
+                    <div class="endpoint-url">/api/auth/register</div>
+                    <div class="endpoint-description">
+                        Создание новой учетной записи.
+                    </div>
+                </div>
+
+                <div class="api-endpoint for-all">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                        <span class="method method-post">POST</span>
+                        <strong>Авторизация</strong>
+                    </div>
+                    <div class="endpoint-url">/api/auth/login</div>
+                    <div class="endpoint-description">
+                        Вход в систему.
+                    </div>
+                </div>
+            </div>
+
+            <div class="api-category for-client">
+                <h3><i class="fas fa-user"></i> Клиенты</h3>
+
+                <div class="api-endpoint for-client">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                        <span class="method method-get">GET</span>
+                        <strong>Поиск отелей</strong>
+                    </div>
+                    <div class="endpoint-url">
+                        /api/hotels/search
+                    </div>
+                    <div class="endpoint-description">
+                        Поиск отелей по фильтрам: город, даты, количество гостей, цена, удобства.
+                    </div>
+                </div>
+
+                <div class="api-endpoint for-client">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                        <span class="method method-get">GET</span>
+                        <strong>Список бронирований</strong>
+                    </div>
+                    <div class="endpoint-url">/api/bookings</div>
+                    <div class="endpoint-description">
+                        Получение списка бронирований клиента.
+                    </div>
+                </div>
+
+                <div class="api-endpoint for-client">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                        <span class="method method-post">POST</span>
+                        <strong>Создание бронирования</strong>
+                    </div>
+                    <div class="endpoint-url">/api/bookings</div>
+                    <div class="endpoint-description">
+                        Создание нового бронирования на выбранный отель и даты.
+                    </div>
+                </div>
+            </div>
+
+            <div class="api-category for-hotelier">
+                <h3><i class="fas fa-building"></i> Отельеры</h3>
+
+                <div class="api-endpoint for-hotelier">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                        <span class="method method-get">GET</span>
+                        <strong>Список отелей</strong>
+                    </div>
+                    <div class="endpoint-url">/api/hotelier/hotels</div>
+                    <div class="endpoint-description">
+                        Получение списка всех отелей, принадлежащих текущему отельеру.
+                    </div>
+                </div>
+
+                <div class="api-endpoint for-hotelier">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                        <span class="method method-post">POST</span>
+                        <strong>Добавление отеля</strong>
+                    </div>
+                    <div class="endpoint-url">/api/hotelier/hotels</div>
+                    <div class="endpoint-description">
+                        Добавление нового отеля с полной информацией: название, описание, адрес, фотографии, удобства.
+                    </div>
+                </div>
+
+                <div class="api-endpoint for-hotelier">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                        <span class="method method-put">PUT</span>
+                        <strong>Обновление отеля</strong>
+                    </div>
+                    <div class="endpoint-url">/api/hotelier/hotels/{hotelId}</div>
+                    <div class="endpoint-description">
+                        Обновление информации об отеле: изменение описания, цен, доступности номеров.
+                    </div>
+                </div>
+
+                <div class="api-endpoint for-hotelier">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                        <span class="method method-get">GET</span>
+                        <strong>Бронирования отеля</strong>
+                    </div>
+                    <div class="endpoint-url">/api/hotelier/bookings?hotelId={hotelId}</div>
+                    <div class="endpoint-description">
+                        Получение списка всех бронирований для конкретного отеля или всех отелей отельера.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2025 BookIT. Платформа бронирования отелей.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
